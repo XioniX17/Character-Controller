@@ -15,6 +15,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     public void TakeDamage(float damage){
         animator.SetTrigger("Hit");
         currentHealth -= damage;
+        Debug.Log("Got Hit");
     }
 
     public void Die(){
